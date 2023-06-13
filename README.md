@@ -10,6 +10,10 @@
 
 - Banco de Dados: O sistema utiliza um banco de dados H2 para armazenar os classificados de veículos. O consumidor recupera as mensagens da fila, processa-as e adiciona os veículos ao banco de dados.
 
+O sistema utiliza uma fila de mensagens (como o RabbitMQ) para garantir o fluxo ordenado de dados entre os produtores, consumidores e o serviço REST.
+
+Essa é uma visão geral do sistema e como as diferentes partes se relacionam para criar um sistema de publicação de anúncios de veículos.
+
 # PASSO A PASSO DE COMO RODAR O CÓDIGO.
 
 1 - Execute o aplicativo de produtor para criar e enviar mensagens contendo objetos Veículo para a fila.
