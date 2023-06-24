@@ -23,10 +23,15 @@ Para rodar o projeto, rode o seguinte comando: Abra as pastas "FILA VEICULOS/src
 
 Quando a aplicação estiver no ar, acesse essa url: http://localhost:8080/veiculos
 
-Para vizualizar a fila utilize o ACTIVEMQ, através do prompt de comando com o seguinte codigo: activemq start 
+Para vizualizar a fila utilize o ACTIVEMQ, através do prompt de comando com o seguinte codigo: 
+
+```
+activemq start
+```
 
 Quando acessar o ACTIVEMQ pela sua url, pedirá um usuário e uma senha: 
-  - usuário:admin  senha:admin
+  - usuário:admin
+  - senha:admin
 
 Caso o programa não crie o banco de dados. Vá até o arquivo import.sql copie e cole o código para o banco de dados * H2 , que deve conter as seguintes configurações:
 
