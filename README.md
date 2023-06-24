@@ -30,10 +30,12 @@ Quando acessar o ACTIVEMQ pela sua url, pedirá um usuário e uma senha:
 
 Caso o programa não crie o banco de dados. Vá até o arquivo import.sql copie e cole o código para o banco de dados * H2 , que deve conter as seguintes configurações:
 
+```
 Setting Name: Generic H2 (Server)
 Setting Name: org.h2.Driver
 JDBC URL: jdbc:h2:~/test
 User Name: sa
+```
 
 Para o acesso ao banco de dados, acesse a seguinte url: http://localhost:8080/h2-console e inclua os seguintes comandos: 
 
@@ -47,13 +49,14 @@ Para o acesso ao banco de dados, acesse a seguinte url: http://localhost:8080/h2
     dataPublicacao timestamp,
     primary key (id)
 );
-```
+
 
 INSERT INTO veiculo (nomeCliente, marcaModeloVeiculo, anoModelo, valorVenda, dataPublicacao) VALUES ('Vitor Faro', 'Porsche 411', 2023, 350000.0, '2021-09-20 12:30:00');
 INSERT INTO veiculo (nomeCliente, marcaModeloVeiculo, anoModelo, valorVenda, dataPublicacao) VALUES ('Luiz', 'Renault Kwid', 2022, 32000.0, '2021-09-20 14:30:00');
 INSERT INTO veiculo (nomeCliente, marcaModeloVeiculo, anoModelo, valorVenda, dataPublicacao) VALUES ('Lucas', 'Jeep Renegade', 2020, 38000.0, '2021-09-20 20:30:00');
 INSERT INTO veiculo (nomeCliente, marcaModeloVeiculo, anoModelo, valorVenda, dataPublicacao) VALUES ('Mariana', 'Honda Civic', 2017, 40000.0, '2021-09-20 17:30:00');
 INSERT INTO veiculo (nomeCliente, marcaModeloVeiculo, anoModelo, valorVenda, dataPublicacao) VALUES ('Carla', 'Fiat Argo', 2018, 22000.0, '2021-09-20 15:30:00');
+```
 
 # RESUMINDO O PASSO A PASSO DO FUNCIONAMENTO DO CÓDIGO.
 
